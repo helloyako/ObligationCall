@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Obligation Call/Obligation Call.iml" filepath="$PROJECT_DIR$/Obligation Call/Obligation Call.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ObligationCall.iml" filepath="$PROJECT_DIR$/ObligationCall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/andoid_project.iml" filepath="$PROJECT_DIR$/andoid_project.iml" />
     </modules>
   </component>
 </project>

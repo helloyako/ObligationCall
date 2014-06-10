@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Obligation Call" />
+            <option value="C:\Users\Administrator\andoid_project" />
+            <option value="C:\Users\Administrator\andoid_project\Obligation Call" />
           </set>
         </option>
       </GradleProjectSettings>

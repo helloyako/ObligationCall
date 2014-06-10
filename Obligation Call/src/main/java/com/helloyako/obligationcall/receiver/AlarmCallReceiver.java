@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.util.Log;
 
 import com.helloyako.obligationcall.free.R;
@@ -23,15 +24,24 @@ public class AlarmCallReceiver extends BroadcastReceiver {
         String phoneNumberKey = context.getString(R.string.bundle_phone_number_key);
         String phoneNumber = bundle.getString(phoneNumberKey);
 
+        PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+        PowerManager.WakeLock screenWakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP, context.getString(R.string.TAG));
+
+        if(screenWakeLock != null){
+            screenWakeLock.acquire();
+        }
+
         Intent callIntent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phoneNumber));
         callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
-        Log.d("AlarmRecevier","index : " + String.valueOf(index));
         dataSource.updateCall(index, true);
 
         context.startActivity(callIntent);
 
-
+        if(screenWakeLock != null){
+            screenWakeLock.release();
+            screenWakeLock = null;
+        }
 
         dataSource.close();
     }
