@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.os.PowerManager;
 import android.util.Log;
 
-import com.helloyako.obligationcall.free.R;
+import com.helloyako.obligationcall.R;
 import com.helloyako.obligationcall.data.ObligationDatasource;
 
 public class AlarmCallReceiver extends BroadcastReceiver {

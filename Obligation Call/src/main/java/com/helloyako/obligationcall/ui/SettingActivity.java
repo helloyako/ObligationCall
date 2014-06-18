@@ -20,7 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.helloyako.obligationcall.ObligationCallCommon;
-import com.helloyako.obligationcall.free.R;
+import com.helloyako.obligationcall.R;
 import com.helloyako.obligationcall.data.ObligationDatasource;
 import com.helloyako.obligationcall.model.CallInfo;
 

@@ -15,7 +15,8 @@
     <string name="submit_btn">설정완료</string>
     <string name="reset_btn">설정 초기화</string>
     <string name="colon_text">:</string>
-    <string name="digi_link">의무통화 전화번호 정보 &lt;a href=http://digi.kr>http://digi.kr&lt;/a>&lt;br&gt;이 앱은 위 사이트와는 무관합니다</string>
+    <string name="digi_link_bak">의무통화 전화번호 정보 &lt;a href=http://digi.kr>http://digi.kr&lt;/a>&lt;br&gt;이 앱은 위 사이트와는 무관합니다</string>
+    <string name="digi_link">의무통화 전화번호 정보는&lt;br&gt; 제작자 요청에 의해 삭제 되었습니다.</string>
     <string name="give_text">&lt;a href=https://play.google.com/store/apps/details?id=com.helloyako.obligationcall.give&gt;개발자에게 기부하러 가기&lt;/a&gt;</string>
     <string name="title_activity_setting">SettingActivity</string>
     <string name="test_string">2014년 00월11일 10시</string>

@@ -9,7 +9,7 @@ import android.os.Bundle;
 import com.helloyako.obligationcall.model.CallInfo;
 import com.helloyako.obligationcall.receiver.AlarmCallReceiver;
 
-import com.helloyako.obligationcall.free.R;
+import com.helloyako.obligationcall.R;
 
 import java.util.List;
 
