@@ -10,10 +10,21 @@ android {
         versionCode 102
         versionName "1.0.2"
     }
+    signingConfigs {
+        release {
+            Properties props = new Properties()
+            props.load(new FileInputStream("key.properties"))
+            storeFile file(props.getProperty("ANDROID_KEYSTORE_PATH"))
+            storePassword props.getProperty("ANDROID_STORE_PASS")
+            keyAlias props.getProperty("ANDROID_KEY_ALIAS")
+            keyPassword props.getProperty("ANDROID_KEY_PASS")
+        }
+     }
     buildTypes {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
         }
     }
 }
