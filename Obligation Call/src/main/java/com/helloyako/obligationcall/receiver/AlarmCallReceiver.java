@@ -7,6 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.helloyako.obligationcall.R;
 import com.helloyako.obligationcall.data.ObligationDatasource;
@@ -35,6 +36,8 @@ public class AlarmCallReceiver extends BroadcastReceiver {
         callIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         dataSource.updateCall(index, true);
+
+        Toast.makeText(context,context.getString(R.string.call_info_message),Toast.LENGTH_LONG).show();
 
         context.startActivity(callIntent);
 
